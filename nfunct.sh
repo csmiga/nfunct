@@ -1,32 +1,28 @@
 #! /usr/bin/env bash
 
 : <<'END'
-Author:  Christopher Smiga
-e-Mail:  CSmiga@Yahoo.com
-ICQ:     5035779
+Author:   Christopher Smiga
+e-Mail:   CSmiga@yahoo.com
+LinkedIn: https://www.linkedin.com/in/csmiga/
 
 File:    nfunct.sh
 END
 
-declare NFUNCT_BIN
-declare NFUNCT_PROC
-NFUNCT_BIN=/root/Projects/venv3/bin/locust
-NFUNCT_PROC=$(pgrep locust)
+declare NFUNCT_CONF=$HOME/Projects/nfunct/conf/nfunct.conf
+#declare NFUNCT_CONF=$HOME/Projects/nfunct_behaviors/plutotv/conf/plutotv.conf
+declare NFUNCT_BIN=/root/Projects/venv3/bin/locust
+declare NFUNCT_PROC=$(pgrep locust)
 
 function nfunct_start () {
     if [ -z "$NFUNCT_PROC" ]
     then
-        local NFUNCT_HOME
-        local NFUNCT_CFG
-        local NFUNCT_ARG
-        local NFUNCT_PID
-        NFUNCT_HOME=$HOME/Projects/nfunct
-        NFUNCT_CFG=$NFUNCT_HOME/conf/nfunct.conf
-        NFUNCT_ARG=$(grep -Ev "^$|#" "$NFUNCT_CFG" | \
+        local NFUNCT_ARG=$(grep -Ev "^$|#" "$NFUNCT_CONF" | \
             awk -F\, '{print $2 "--" $1}' | awk 'ORS=" "')
+        # Debug "nfunct start" using output.
         #$NFUNCT_BIN $NFUNCT_ARG
+        # Process monitorng using "nfunct status".
         $NFUNCT_BIN $NFUNCT_ARG 2> /dev/null &
-        NFUNCT_PID=$(pgrep locust)
+        local NFUNCT_PID=$(pgrep locust)
         echo "nfunct [ PID: $NFUNCT_PID ] starting "
         sleep 1
         if [ -n "$NFUNCT_PID" ]
@@ -55,8 +51,7 @@ function nfunct_stop () {
         echo "nfunct [ PID: $NFUNCT_PROC ] stopping"
         kill -SIGTERM "$NFUNCT_PROC"
         sleep 1
-        local NFUNCT_PID
-        NFUNCT_PID=$(pgrep locust)
+        local NFUNCT_PID=$(pgrep locust)
         if [ -z "$NFUNCT_PID" ]
         then
             echo "nfunct [ PID: None ] stopped"
@@ -69,8 +64,17 @@ function nfunct_stop () {
 }
 
 case "$1" in
+    help)
+        echo
+        echo "Binary: $($NFUNCT_BIN --version)"
+        echo "Config: $(echo $NFUNCT_CONF)"
+        echo
+        echo "Reading config file..."
+        echo
+        cat $NFUNCT_CONF
+        ;;
     list)
-        $NFUNCT_BIN --list --locustfile lib/testfile.py
+        $NFUNCT_BIN --list --locustfile $(awk '/^locustfile/ {print $2}' $NFUNCT_CONF)
         ;;
     start)
         nfunct_start
@@ -86,7 +90,7 @@ case "$1" in
         ;;
 
     *)
-        echo $"Usage: $0 {start|stop|status|list|version}"
+        echo $"Usage: $0 {start|stop|status|list|version|help}"
         exit 1
 esac
 
