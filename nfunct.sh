@@ -90,7 +90,7 @@ case "$1" in
         ;;
 
     *)
-        echo $"Usage: $0 {start|stop|status|list|version|help}"
+        echo "Usage: $0 {start|stop|status|list|version|help}"
         exit 1
 esac
 
