@@ -8,7 +8,7 @@ nfunct is a performance test framework. Using a CI/CD pipeline or other practice
 ### Contents
 
   * [What is Non-functional Testing][what_is_non-functional_testing]
-  * [Non-functional testing includes][techniques]
+  * [Non-functional testing includes][non-functional_testing_includes]
 
 ### What is Non-functional Testing
 
