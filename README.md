@@ -35,3 +35,4 @@ Non-functional testing is the testing of a software application or system for it
 
   [what_is_non-functional_testing]: <https://github.com/csmiga/nfunct/blob/master/README.md#what-is-non-functional-testing>
   [non-functional_testing_includes]: <https://github.com/csmiga/nfunct/blob/master/README.md#non-functional-testing-techniques>
+ 
