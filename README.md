@@ -6,7 +6,7 @@ automated performance testing. Automated testing adds value in a software develo
 (CI/CD) or other practices. Speed of delivery while maintaining quaility is the
 requirement.
 
-*Free Development Environment + Free Software = Opportunity*
+*Open Source Software (OSS) = Opportunity*
 
 ### Contents
 
