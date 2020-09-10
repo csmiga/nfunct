@@ -8,7 +8,7 @@ nfunct is a performance test framework. Using a CI/CD pipeline or other practice
 ### Contents
 
   * [What is Non-functional Testing][what_is_non-functional_testing]
-  * [Non-functional testing includes][non-functional_testing_includes]
+  * [Non-functional testing includes][techniques]
 
 ### What is Non-functional Testing
 
@@ -34,4 +34,4 @@ Non-functional testing is the testing of a software application or system for it
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
   [what_is_non-functional_testing]: <https://github.com/csmiga/nfunct/blob/master/README.md#what-is-non-functional-testing>
-  [non-functional_testing_includes]: <https://github.com/csmiga/nfunct/blob/master/README.md#non-functional-testing-includes>
+  [non-functional_testing_includes]: <https://github.com/csmiga/nfunct/blob/master/README.md#techniques>
