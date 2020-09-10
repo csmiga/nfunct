@@ -1,10 +1,8 @@
 ## nfunct (non-Functional Test Framework)
 [//]: # (<img src="https://th.bing.com/th/id/OIP.iHbPgMP5K4WWaP2RDBD37wHaHa?w=148&h=180&c=7&o=5&pid=1.7" height="60" width="60">)
 
-nfunct is a non-functional test framework utilizing Python and Locust IO for
-automated performance testing. Automated testing adds value in a software development life cycle (SDLC) using continuous integration and continuous delivery
-(CI/CD) or other practices. Speed of delivery while maintaining quaility is the
-requirement.
+nfunct is a non-functional test framework for automated performance testing. Automated testing adds value in a software development life cycle (SDLC) using continuous integration and continuous delivery (CI/CD) or other practices. Speed of delivery
+while maintaining quaility is a requirement.
 
 *Open Source Software (OSS) = Opportunity*
 
@@ -13,11 +11,11 @@ requirement.
   * [What is non-functional testing][what_is_non-functional_testing]
   * [Non-functional testing includes][includes]
 
-### What is non-functional testing
+### What is Non-functional Testing
 
-Non-functional testing is the testing of a software application or system for its non-functional requirements: the way a system operates, rather than specific behaviours of that system. This is in contrast to functional testing, which tests against functional requirements that describe the functions of a system and its components. The names of many non-functional tests are often used interchangeably because of the overlap in scope between various non-functional requirements. For example, software performance is a broad term that includes many specific requirements like reliability and scalability.
+Non-functional testing is the testing of a software application or system for its non-functional requirements: the way a system operates, rather than specific behaviours of that system. This is in contrast to functional testing, which tests against functional requirements that describe the functions of a system and its components. The names of many non-functional tests are often used interchangeably because of the overlap in scope between various non-functional requirements. For example, software performance is a broad term that includes many specific requirements like reliability and scalability. In short, non-functional testing is a software testing technique that verifies the attributes of the system such as memory leaks, performance or robustness of the system. Non-Functional testing is performed at all test levels.
 
-### Non-functional testing includes
+### Non-functional Testing Techniques
 
   * Baseline testing
   * Compliance testing
