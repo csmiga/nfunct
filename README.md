@@ -1,15 +1,14 @@
 ## nfunct (non-Functional Testing)
 [//]: # (<img src="https://th.bing.com/th/id/OIP.iHbPgMP5K4WWaP2RDBD37wHaHa?w=148&h=180&c=7&o=5&pid=1.7" height="60" width="60">)
 
-nfunct is a non-functional test framework for automated performance testing. Automated testing adds value in a software development life cycle (SDLC) using continuous integration and continuous delivery (CI/CD) or other practices. Speed of delivery
-while maintaining quaility is a requirement.
+nfunct is a automation performance test framework. Using a CI/CD pipeline or other practices, automated performance testing speeds software delivery while maintaining quaility.
 
 *Open Source Software (OSS) = Opportunity*
 
 ### Contents
 
-  * [What is non-functional testing][what_is_non-functional_testing]
-  * [Non-functional testing includes][includes]
+  * [What is Non-functional Testing][what_is_non-functional_testing]
+  * [Non-functional testing includes][non-functional_testing_includes]
 
 ### What is Non-functional Testing
 
