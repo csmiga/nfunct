@@ -1,7 +1,7 @@
 ## nfunct (non-Functional Testing)
 [//]: # (<img src="https://th.bing.com/th/id/OIP.iHbPgMP5K4WWaP2RDBD37wHaHa?w=148&h=180&c=7&o=5&pid=1.7" height="60" width="60">)
 
-nfunct is a performance test framework utilizing Python and Locust IO for automated non-functional testing. Automation adds value in a software development life cycle (SDLC) using continuous integration and continuous delivery (CI/CD) or other practices. Speed of delivery while maintaining quaility is the requirement
+nfunct is a performance test framework utilizing Python and Locust IO distributed systems for automated non-functional testing. Automation adds value in a software development life cycle (SDLC) using continuous integration and continuous delivery (CI/CD) practices. Speed of delivery while maintaining quaility is the requirement
 
 *Open Source Software (OSS) = Opportunity*
 
